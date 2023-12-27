@@ -23,14 +23,28 @@ class LettersCalculator extends Component {
     return (
       <div className="home">
         <div className="text-container">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
+            alt="letters calculator"
+            className="image-small"
+          />
+
           <h1 className="heading">
-            Calculate the <br /> Letters you <br /> enter
+            Calculate the Letters <br />
+            you enter
           </h1>
 
           <label htmlFor="phrase" className="parag">
             Enter the phrase
           </label>
           <br />
+          <input
+            type="text"
+            placeholder="Enter the phrase"
+            className="input-small"
+            id="phrase"
+            onChange={this.onChangeTextValue}
+          />
           <input
             type="text"
             placeholder="Enter the phrase"

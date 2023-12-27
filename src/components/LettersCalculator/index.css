@@ -1,19 +1,72 @@
-.home {
-  background-image: linear-gradient(to right, #1d976c, #93f9b9);
-  height: 100vh;
-  display: flex;
+@media (width: 576px), (max-width: 768px) {
+  .home {
+    background-image: linear-gradient(to right, #1d976c, #93f9b9);
+    height: 100vh;
+    display: flex;
 
-  justify-content: flex-start;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-small {
+    color: #e4e7eb;
+    font-family: 'Roboto';
+    font-weight: bold;
+    width: 20vw;
+    padding: 2px;
+    background-color: transparent;
+    border-color: #ffffff;
+    display: flex;
+  }
+
+  .input {
+    display: none;
+  }
 }
 
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 30px;
-  text-align: left;
+@media (width: 992px), (min-width: 992px) {
+  .home {
+    background-image: linear-gradient(to right, #1d976c, #93f9b9);
+    height: 100vh;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .input-small {
+    display: none;
+  }
+
+  .input {
+    color: #e4e7eb;
+    font-family: 'Roboto';
+    display: flex;
+    font-weight: bold;
+    width: 20vw;
+    padding: 2px;
+    background-color: transparent;
+    border-color: #ffffff;
+  }
+}
+@media (width: 576px), (max-width: 768px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (width: 992px), (min-width: 992px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    text-align: left;
+  }
 }
 
 .heading {
@@ -48,7 +101,26 @@
   padding: 10px;
 }
 
-.image {
-  background-size: cover;
-  height: 50vh;
+@media (max-width: 768px), (width: 576px) {
+  .image-small {
+    display: flex;
+    background-size: cover;
+    height: 25vh;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
+@media (min-width: 992px), (width: 992px) {
+  .image {
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+  }
+
+  .image-small {
+    display: none;
+  }
 }
