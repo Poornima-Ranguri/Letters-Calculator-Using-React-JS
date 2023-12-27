@@ -40,7 +40,7 @@ class LettersCalculator extends Component {
           <br />
           <input
             type="text"
-            placeholder="Enter the phrase"
+            placeholder="Calculator"
             className="input-small"
             id="phrase"
             onChange={this.onChangeTextValue}
